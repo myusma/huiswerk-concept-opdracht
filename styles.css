@@ -1,5 +1,348 @@
+/*Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+                                                                                 Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst);*/
+
+/* -------------------------------  Global Styles -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ------------------------------- Typography ----------------------------------- */
+body {
+    font-family: Roboto, serif;
+}
+
+h1, h2, h3 {
+    font-family: Merriweather, serif;
+}
+
+/* --------------- Header ------------------------- */
+.header {
+    background-color: #4845E4;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+    padding: 10px;
+    width: 120%;
+}
+
+.nav-componenten {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    border-color: black;
+    flex-basis: 400px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.your-website {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 100px;
+    width: 70%;
+    text-align: center;
+
+
+}
+
+.img {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.button {
+    background-color: #ED4385;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 6px 10px 0 #333333;
+
+    /* --------------- Introduction ------------------- */
+}
+
+.section-one {
+    background-color: white;
+    padding: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.rekupe {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+}
+
+.h2 {
+    color: #4845E4;
+}
+
+/* --------------- Articles  ------------------- */
+
+.section-two {
+
+    background-color: #F3F6F9;
+}
+
+.article-one {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+
+}
+
+.rolling-stone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 100px;
+
+
+}
+
+.rolling-stone-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 50px;
+    flex-basis: 100%;
+
+
+}
+
+
+.link {
+    text-decoration: none;
+    color: #5722CD;
+    transition: width 1s;
+}
+
+.article-two {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.variety {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 100px;
+
+
+}
+
+.variety-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 50px;
+    flex-basis: 100%;
+}
+
+.article-three {
+    display: flex;
+    flex-direction: row;
+}
+
+.worth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 100px;
+}
+
+.worth-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 50px;
+    flex-basis: 100%;
+
+}
+
+.section-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: normal;
+}
+
+
+.group-articles {
+    width: 100%;
+
+}
+
+.image-two {
+    width: 30%;
+
+}
+
+.group-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+
+.article-second {
+    display: flex;
+    flex-basis: 350px;
+    flex-direction: column;
+    height: 350px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    border-style: solid;
+    border-color: #4845E4;
+    margin: 25px;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+
+.article-second-text {
+    color: #7A7A7A;
+}
+
+.purple-color {
+    color: #5722CD;
+}
+
+/* --------------- Form ------------------- */
+
+.form-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    background-color: #4845E4;
+}
+
+.div-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+
+}
+
+.text-in-form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    border: none;
+
+}
+
+.text-form-space {
+    padding-top: 20px;
+}
+
+.button-size {
+    position: center;
+    margin: 30px;
+    background-color: #ED4385;
+    color: #F3F6F9;
+    padding: 15px;
+    width: 150px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 6px 10px 0 #333333;
+}
+
+.button-position {
+    text-align: center;
+}
+
+.button-text {
+    color: white;
+    text-decoration: none;
+
+}
+
+.form-h2 {
+    text-align: center;
+    color: white;
+}
+
+.form-paragraph {
+    text-align: center;
+    color: white;
+}
+
+/* --------------- Footer ------------------- */
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
